@@ -1,0 +1,25 @@
+{
+  "manifest_version": 3,
+  "name": "Save Selected HTML",
+  "version": "1.0",
+  "permissions": [
+    "storage",
+    "activeTab",
+    "contextMenus"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "commands": {
+    "saveHtml": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+S"
+      },
+      "description": "Save selected HTML"
+    }
+  }
+}
+

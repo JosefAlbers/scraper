@@ -1,0 +1,36 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 16px;
+  width: 300px;
+  overflow: hidden;
+}
+
+.button-container {
+  text-align: right;
+  margin-bottom: 16px;
+}
+
+#downloadJson {
+  padding: 8px 16px;
+  border: 1px solid #ddd;
+  background: #fff;
+  cursor: pointer;
+}
+
+#savedItems {
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+.saved-item {
+  margin-bottom: 12px;
+  padding: 12px;
+  border: 1px solid #ddd;
+  background: #fafafa;
+  word-wrap: break-word;
+}
+
+.saved-item p {
+  margin: 4px 0;
+}
