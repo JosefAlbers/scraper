@@ -7,15 +7,21 @@ body {
 }
 
 .button-container {
-  text-align: right;
+  display: flex;
+  justify-content: space-between;
   margin-bottom: 16px;
 }
 
-#downloadJson {
+#downloadJson, #exportClipboard {
   padding: 8px 16px;
   border: 1px solid #ddd;
   background: #fff;
   cursor: pointer;
+  border-radius: 4px;
+}
+
+#downloadJson:hover, #exportClipboard:hover {
+  background: #f0f0f0;
 }
 
 #savedItems {
@@ -33,4 +39,31 @@ body {
 
 .saved-item p {
   margin: 4px 0;
+}
+
+.image-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  margin: 6px 0;
+}
+
+.thumb {
+  width: 48px;
+  height: 48px;
+  object-fit: cover;
+  border-radius: 4px;
+  cursor: pointer;
+  border: 1px solid #ddd;
+}
+
+.remark-input {
+  width: 100%;
+  box-sizing: border-box;
+  margin-top: 6px;
+  padding: 4px 6px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 12px;
+  font-family: Arial, sans-serif;
 }
